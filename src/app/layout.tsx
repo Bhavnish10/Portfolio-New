@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bhavnish Nanda | Finance & Analytics Portfolio",
+  title: "Bhavnish Nanda Portfolio",
   description: "Portfolio of Bhavnish Nanda - MBA Finance Student and Data Analytics & Technology Enthusiast at Institute of Management, Nirma University.",
   keywords: [
     "Bhavnish Nanda",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Bhavnish Nanda" }],
   creator: "Bhavnish Nanda",
   openGraph: {
-    title: "Bhavnish Nanda | AI Developer & Blockchain Enthusiast",
+    title: "Bhavnish Nanda Portfolio",
     description: "Futuristic premium portfolio of Bhavnish Nanda, bridging the gap between business strategy and cutting-edge technology.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bhavnish Nanda | AI Developer & Blockchain Enthusiast",
+    title: "Bhavnish Nanda Portfolio",
     description: "Futuristic premium portfolio of Bhavnish Nanda.",
   }
 };
