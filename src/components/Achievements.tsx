@@ -99,7 +99,7 @@ export default function Achievements() {
                 className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-slate-800/20 transition-colors cursor-pointer"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/20 flex items-center justify-center text-amber-450 flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/20 flex items-center justify-center text-amber-400 flex-shrink-0">
                     <Trophy className="w-5 h-5" />
                   </div>
                   <h3 className="text-sm sm:text-base font-semibold text-white leading-relaxed pr-4">

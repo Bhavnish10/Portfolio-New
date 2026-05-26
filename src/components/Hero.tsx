@@ -113,9 +113,9 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="section-container relative z-10 grid md:grid-cols-12 gap-8 items-center">
+      <div className="section-container relative z-10 grid grid-cols-12 gap-8 items-center">
         {/* Intro Text */}
-        <div className="md:col-span-8 flex flex-col items-start text-left">
+        <div className="col-span-12 md:col-span-8 flex flex-col items-start text-left">
           {/* Tagline */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -134,7 +134,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-white mb-6 leading-[1.1]"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold tracking-tight text-white mb-6 leading-[1.1]"
           >
             Bhavnish{" "}
             <span className="bg-gradient-to-r from-primary-light via-primary to-accent-purple bg-clip-text text-transparent text-glow">
@@ -209,7 +209,7 @@ export default function Hero() {
         </div>
 
         {/* Cinematic Profile Visual */}
-        <div className="md:col-span-4 hidden md:flex items-center justify-center relative min-h-[320px]">
+        <div className="col-span-12 md:col-span-4 flex items-center justify-center relative min-h-[280px] md:min-h-[320px] order-first md:order-last mb-8 md:mb-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -219,7 +219,7 @@ export default function Hero() {
             {/* Glow ring */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/40 to-accent-purple/20 blur-2xl animate-pulse-glow" />
             {/* Profile card */}
-            <div className="relative w-80 h-80 rounded-3xl bg-slate-900/80 border border-slate-800/80 flex items-center justify-center overflow-hidden glass-panel shadow-[0_0_80px_rgba(0,102,255,0.15)]">
+            <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-3xl bg-slate-900/80 border border-slate-800/80 flex items-center justify-center overflow-hidden glass-panel shadow-[0_0_80px_rgba(0,102,255,0.15)]">
               <img
                 src="/profile.png"
                 alt="Bhavnish Nanda"
@@ -231,7 +231,7 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-4 -right-4 bg-slate-900/90 border border-slate-700/80 rounded-2xl px-3 py-2 glass-panel shadow-lg"
+              className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-slate-900/90 border border-slate-700/80 rounded-2xl px-3 py-2 glass-panel shadow-lg"
             >
               <span className="text-[10px] font-mono text-primary-light font-semibold tracking-wider">BN</span>
               <p className="text-[8px] text-slate-400 mt-0.5">Nirma University</p>

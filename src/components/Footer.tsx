@@ -47,15 +47,15 @@ export default function Footer() {
         </div>
 
         {/* Copyright & Scroll-to-Top */}
-        <div className="flex items-center gap-6">
-          <p className="text-[10px] font-mono text-slate-500">
+        <div className="flex flex-col-reverse sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-right">
+          <p className="text-[10px] font-mono text-slate-500 max-w-[280px] sm:max-w-none leading-relaxed">
             &copy; {new Date().getFullYear()} Bhavnish Nanda. Built with React, Tailwind CSS, Node.js, and MongoDB.
           </p>
 
           <button
             onClick={scrollToTop}
             aria-label="Scroll back to top"
-            className="w-9 h-9 rounded-full border border-slate-800 bg-slate-900/50 hover:bg-primary/20 hover:border-primary-light flex items-center justify-center text-slate-400 hover:text-primary-light cursor-pointer transition-all duration-300 hover:scale-105 focus:outline-none"
+            className="w-9 h-9 rounded-full border border-slate-800 bg-slate-900/50 hover:bg-primary/20 hover:border-primary-light flex items-center justify-center text-slate-400 hover:text-primary-light cursor-pointer transition-all duration-300 hover:scale-105 focus:outline-none flex-shrink-0"
           >
             <ArrowUp className="w-4 h-4" />
           </button>

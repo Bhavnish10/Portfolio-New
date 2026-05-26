@@ -259,7 +259,7 @@ export default function Contact() {
 
               <InteractiveSocialCard
                 href="https://github.com/Bhavnish10"
-                className="col-span-1"
+                className="col-span-2 sm:col-span-1"
                 title="GitHub"
                 subtitle="Bhavnish10"
                 orbColor="from-cyan-400 to-blue-500"
@@ -273,7 +273,7 @@ export default function Contact() {
 
               <InteractiveSocialCard
                 href="https://wa.me/919925208620"
-                className="col-span-1"
+                className="col-span-2 sm:col-span-1"
                 title="WhatsApp"
                 subtitle="Immediate Ping"
                 orbColor="from-emerald-400 to-teal-500"
@@ -306,7 +306,7 @@ export default function Contact() {
 
             </div>
 
-            <div className="mt-8 p-4 rounded-xl bg-slate-950/80 border border-slate-900 flex items-center justify-between gap-4">
+            <div className="mt-8 p-4 rounded-xl bg-slate-950/80 border border-slate-900 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3 overflow-hidden">
                 <div className="w-8 h-8 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary-light flex-shrink-0">
                   <Mail className="w-4 h-4" />
@@ -317,7 +317,7 @@ export default function Contact() {
               </div>
               <button
                 onClick={copyEmail}
-                className="px-3.5 py-1.5 border border-slate-800 bg-slate-900/60 hover:bg-slate-900 text-[10px] font-mono font-semibold rounded-lg text-slate-300 hover:text-white cursor-pointer transition-all active:scale-95 flex-shrink-0 focus:outline-none"
+                className="px-3.5 py-2.5 sm:py-1.5 border border-slate-800 bg-slate-900/60 hover:bg-slate-900 text-[10px] font-mono font-semibold rounded-lg text-slate-300 hover:text-white cursor-pointer transition-all active:scale-95 flex-shrink-0 focus:outline-none text-center"
               >
                 {copied ? "Copied!" : "Copy"}
               </button>
