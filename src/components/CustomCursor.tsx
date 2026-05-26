@@ -6,6 +6,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 export default function CustomCursor() {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(true); // default to true to prevent hydration mismatch/flash on mobile
 
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
@@ -15,6 +16,16 @@ export default function CustomCursor() {
   const cursorYSpring = useSpring(cursorY, springConfig);
 
   useEffect(() => {
+    const checkTouch = () => {
+      const isTouch = window.matchMedia("(pointer: coarse)").matches || 
+                      navigator.maxTouchPoints > 0 || 
+                      window.innerWidth < 1024;
+      setIsTouchDevice(isTouch);
+    };
+
+    checkTouch();
+    window.addEventListener("resize", checkTouch);
+
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
@@ -56,6 +67,7 @@ export default function CustomCursor() {
     setIsVisible(true);
 
     return () => {
+      window.removeEventListener("resize", checkTouch);
       window.removeEventListener("mousemove", moveCursor);
       window.removeEventListener("mouseover", handleMouseOver);
       document.body.removeEventListener("mouseenter", handleMouseEnter);
@@ -63,7 +75,7 @@ export default function CustomCursor() {
     };
   }, [cursorX, cursorY]);
 
-  if (!isVisible) return null;
+  if (isTouchDevice || !isVisible) return null;
 
   return (
     <>
