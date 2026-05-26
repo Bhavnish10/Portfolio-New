@@ -69,8 +69,8 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b ${
-        isScrolled
-          ? "bg-slate-950 border-slate-900/80 shadow-[0_10px_30px_rgba(0,0,0,0.6)] py-3.5"
+        isScrolled || isMobileMenuOpen
+          ? "bg-slate-950 border-slate-900/90 shadow-[0_10px_30px_rgba(0,0,0,0.8)] py-3.5"
           : "bg-transparent border-transparent py-5"
       }`}
     >
@@ -143,7 +143,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden absolute top-20 left-4 right-4 z-30 p-6 rounded-2xl glass-panel bg-slate-950/95 border-slate-800 shadow-2xl flex flex-col gap-4"
+            className="md:hidden absolute top-16 left-4 right-4 z-30 p-6 rounded-2xl border border-slate-800/80 bg-slate-950 shadow-2xl flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2">
               {NAV_LINKS.map((link, idx) => (
