@@ -31,6 +31,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Bhavnish Nanda" }],
   creator: "Bhavnish Nanda",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     title: "Bhavnish Nanda Portfolio",
     description: "Futuristic premium portfolio of Bhavnish Nanda, bridging the gap between business strategy and cutting-edge technology.",
