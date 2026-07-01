@@ -12,6 +12,7 @@ const JOURNEY_ITEMS = [
     institution: "Institute of Management, Nirma University",
     period: "2025–2027",
     details: [
+      "CGPA/Percentage: 80.90%",
       "Specialization: Finance",
       "Minor: Digital Transformation & Analytics",
       "Focusing on financial markets, data analytics, and business strategy",
@@ -23,11 +24,28 @@ const JOURNEY_ITEMS = [
     highlight: true,
   },
   {
+    id: "mirrikh",
+    type: "work",
+    degree: "Financial Analyst",
+    institution: "Mirrikh Infratech Pvt. Ltd.",
+    period: "Apr 2026 – Jun 2026",
+    details: [
+      "Analysed Mirrikh Infratech's financials (FY22-FY25) using MCA filings, computing 15+ ratios revealing 74x revenue growth and critical liquidity risk (Quick Ratio: 0.10x)",
+      "Benchmarked 3 Gujarat real estate firms across 25 parameters using a composite financial health scorecard and competitive gap analysis",
+      "SWOT, PESTEL, and Porter's Five Forces applied to assess strategic positioning within the Dholera SIR smart city ecosystem",
+      "Delivered 12 prioritised recommendations across a 3-phase roadmap covering equity infusion, escrow controls, and geographic diversification to the CSO of Mirrikh Group"
+    ],
+    icon: <Briefcase className="w-5 h-5" />,
+    color: "from-blue-500/20 to-indigo-500/20",
+    glowColor: "group-hover:border-blue-500/30",
+    highlight: true,
+  },
+  {
     id: "internship",
     type: "work",
     degree: "Power BI Intern",
     institution: "Cognifyz Technologies",
-    period: "Internship",
+    period: "Jun 2025 – Jul 2025",
     details: [
       "Developed interactive Power BI dashboards for financial data analysis",
       "Performed data cleaning, transformation (PQ), and visualization",
