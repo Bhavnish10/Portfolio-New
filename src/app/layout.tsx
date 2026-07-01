@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bhavnish Nanda Portfolio",
-    description: "Futuristic premium portfolio of Bhavnish Nanda, bridging the gap between business strategy and cutting-edge technology.",
+    description: "Portfolio of Bhavnish Nanda, bridging the gap between business strategy and cutting-edge technology.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Bhavnish Nanda Portfolio",
-    description: "Futuristic premium portfolio of Bhavnish Nanda.",
+    description: "Portfolio of Bhavnish Nanda.",
   }
 };
 
