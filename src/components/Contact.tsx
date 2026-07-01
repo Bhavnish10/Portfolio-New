@@ -272,7 +272,7 @@ export default function Contact() {
               />
 
               <InteractiveSocialCard
-                href="https://wa.me/919925208620"
+                href="https://wa.me/918866655498"
                 className="col-span-2 sm:col-span-1"
                 title="WhatsApp"
                 subtitle="Immediate Ping"
