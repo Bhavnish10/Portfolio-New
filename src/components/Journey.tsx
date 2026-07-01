@@ -30,10 +30,10 @@ const JOURNEY_ITEMS = [
     institution: "Mirrikh Infratech Pvt. Ltd.",
     period: "Apr 2026 – Jun 2026",
     details: [
-      "Analysed Mirrikh Infratech's financials (FY22-FY25) using MCA filings, computing 15+ ratios revealing 74x revenue growth and critical liquidity risk (Quick Ratio: 0.10x)",
-      "Benchmarked 3 Gujarat real estate firms across 25 parameters using a composite financial health scorecard and competitive gap analysis",
-      "SWOT, PESTEL, and Porter's Five Forces applied to assess strategic positioning within the Dholera SIR smart city ecosystem",
-      "Delivered 12 prioritised recommendations across a 3-phase roadmap covering equity infusion, escrow controls, and geographic diversification to the CSO of Mirrikh Group"
+      "Analysed FY22–FY25 financials from MCA filings, computing 15+ ratios that surfaced 74x revenue growth and a critical liquidity risk (Quick Ratio of 0.10x)",
+      "Benchmarked 3 Gujarat real-estate firms across 25 parameters via a composite financial-health scorecard and competitive gap analysis",
+      "Applied SWOT, PESTEL, and Porter's Five Forces to assess strategic positioning within the Dholera SIR smart-city ecosystem",
+      "Delivered 12 prioritised recommendations across a 3-phase roadmap — equity infusion, escrow controls, and geographic diversification — presented directly to the CSO of Mirrikh Group"
     ],
     icon: <Briefcase className="w-5 h-5" />,
     color: "from-blue-500/20 to-indigo-500/20",
@@ -47,10 +47,10 @@ const JOURNEY_ITEMS = [
     institution: "Cognifyz Technologies",
     period: "Jun 2025 – Jul 2025",
     details: [
-      "Developed interactive Power BI dashboards for financial data analysis",
-      "Performed data cleaning, transformation (PQ), and visualization",
-      "Applied DAX formulas to generate deep business and finance insights",
-      "Supported research workflows with data-driven modeling approaches"
+      "Designed and developed an interactive Power BI dashboard analysing investment trends, gender-based preferences, and savings objectives",
+      "Cleaned, transformed, and visualized raw survey data to identify key investment behaviours, information sources, and decision patterns",
+      "Leveraged DAX measures, interactive filters, and correlation charts to convert data into actionable insights for investment strategy",
+      "Presented findings that highlighted the primary drivers behind individual saving and investment decisions"
     ],
     icon: <Briefcase className="w-5 h-5" />,
     color: "from-emerald-500/20 to-teal-500/20",
